@@ -11,6 +11,10 @@ np.warnings.filterwarnings('ignore', category=np.VisibleDeprecationWarning)
 np.seterr(divide='ignore', invalid='ignore')
 
 
+newFileName = '__' # output file path
+folderName = "__" # path to image folder
+pKNNpath = "__" # location of pKNN.joblib
+
 def fProcessMain(cFileName, knn):
     # Calculates properties of the image, designated by cFileName,
     # Outputs: cLine (image properties, dTree and kNN_1 prediction, padding),
